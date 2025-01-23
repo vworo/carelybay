@@ -1,4 +1,5 @@
 import { Box, Container, Typography } from "@mui/material";
+import Image from "next/image";
 
 export default function PageHeader({
   heading = "<Heading required>",
@@ -6,6 +7,15 @@ export default function PageHeader({
 }) {
   return (
     <Box>
+      {/* Logo and Name */}
+      <Box style={{ display: "flex", alignItems: "center" }}>
+        <Image
+          src="https://placehold.co/28x28"
+          alt="Logo"
+          style={{ width: "28px", height: "28px" }}
+        />
+        <Typography variant="h5">Logotype</Typography>
+      </Box>
       <Typography variant="h4" fontWeight="bold" marginBottom={1}>
         {heading}
       </Typography>
