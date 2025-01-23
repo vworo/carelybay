@@ -12,7 +12,9 @@ export default function PageHeader({
         <Image
           src="https://placehold.co/28x28"
           alt="Logo"
-          style={{ width: "28px", height: "28px" }}
+          width={28}
+          height={28}
+          unoptimized
         />
         <Typography variant="h5">Logotype</Typography>
       </Box>
